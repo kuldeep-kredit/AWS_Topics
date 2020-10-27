@@ -8,11 +8,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/sns"
 )
 
-// usage:
-// go run sns_publish_to_topic.go
 func main() {
-	// Initialize a session in us-west-2 that the SDK will use to load
-	// credentials from the shared credentials file ~/.aws/credentials.
+
 	sess, err := session.NewSession(&aws.Config{
 		Region: aws.String("us-east-2"),
 	})
